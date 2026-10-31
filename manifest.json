@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.manateelazycat.lcmd-window-rule",
+  "name": "Omarchy LCMD Window Rule",
+  "version": "0.1.0",
+  "author": "ManateeLazyCat",
+  "license": "GPL-3.0-only",
+  "description": "Separate Lazycat app workspaces, exclude the Remote WeChat launcher, and place remote WeChat on an empty screen without stealing focus.",
+  "kinds": ["service"],
+  "keepLoaded": true,
+  "entryPoints": { "service": "Service.qml" }
+}
