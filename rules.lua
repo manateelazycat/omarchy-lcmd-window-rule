@@ -1,3 +1,6 @@
+-- SPDX-FileCopyrightText: 2026 Andy Stewart (ManateeLazyCat)
+-- SPDX-License-Identifier: GPL-3.0-only
+
 -- Runtime-only rules: the Omarchy service owns their lifetime.
 local M = {}
 local VERSION = "0.1.0"

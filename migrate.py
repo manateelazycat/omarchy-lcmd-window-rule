@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2026 Andy Stewart (ManateeLazyCat)
+# SPDX-License-Identifier: GPL-3.0-only
+
 """Remove only the known manual rules superseded by this plugin; preview by default."""
 import argparse
 from datetime import datetime

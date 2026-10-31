@@ -56,4 +56,8 @@ python3 -m unittest discover -s tests -p 'test_*.py'
 bash -n install.sh
 ```
 
-GPL-3.0-only. See [LICENSE](LICENSE).
+## License
+
+Copyright © 2026 Andy Stewart (ManateeLazyCat).
+
+All source code is licensed under the GNU General Public License version 3 (`GPL-3.0-only`). See [LICENSE](LICENSE) for the full license text.

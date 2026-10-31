@@ -56,4 +56,8 @@ python3 -m unittest discover -s tests -p 'test_*.py'
 bash -n install.sh
 ```
 
-许可证：GPL-3.0-only，见 [LICENSE](LICENSE)。
+## 许可证
+
+Copyright © 2026 Andy Stewart (ManateeLazyCat)。
+
+全部源代码采用 GNU 通用公共许可证第 3 版（`GPL-3.0-only`）开源，完整许可证见 [LICENSE](LICENSE)。

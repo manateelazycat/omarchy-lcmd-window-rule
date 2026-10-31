@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Andy Stewart (ManateeLazyCat)
+# SPDX-License-Identifier: GPL-3.0-only
+
 import importlib.util
 import os
 from pathlib import Path

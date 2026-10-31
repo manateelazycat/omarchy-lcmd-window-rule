@@ -1,3 +1,6 @@
+-- SPDX-FileCopyrightText: 2026 Andy Stewart (ManateeLazyCat)
+-- SPDX-License-Identifier: GPL-3.0-only
+
 -- Behavioural tests for placement and runtime subscription ownership.
 local source = debug.getinfo(1, "S").source:sub(2)
 local root = source:match("^(.*)/tests/[^/]+$") or "."
