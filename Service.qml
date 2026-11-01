@@ -91,7 +91,7 @@ Item {
     IpcHandler {
         target: "io.github.manateelazycat.lcmd-window-rule"
         function status(): string {
-            return JSON.stringify({ applied: root.applied, version: "0.1.0", error: root.lastError,
+            return JSON.stringify({ applied: root.applied, version: "0.1.1", error: root.lastError,
                 eventSocketConnected: events.connected, reloadEvents: root.reloadEvents });
         }
     }

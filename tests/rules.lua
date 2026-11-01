@@ -77,6 +77,12 @@ placement("skip powered-off monitor", function() monitors[2].dpms_status = false
 placement("skip mirrored monitor", function() monitors[2].is_mirror = true end)
 placement("do not relocate ordinary apps", function(w) w.class = "browser" end)
 placement("do not relocate local WeChat", function(w) w.initial_title = "微信" end)
+placement("respect an explicit Startup Map destination", function(w)
+  w.tags = { "omarchy-startup-map" }
+end)
+placement("respect Startup Map while its mapping rule is active", function(w)
+  w.tags = { "omarchy-startup-map*" }
+end)
 placement("hidden group members still occupy a workspace", function()
   local grouped = window("grouped", 1); grouped.hidden = true; windows[#windows + 1] = grouped
 end)

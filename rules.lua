@@ -3,7 +3,7 @@
 
 -- Runtime-only rules: the Omarchy service owns their lifetime.
 local M = {}
-local VERSION = "0.1.0"
+local VERSION = "0.1.1"
 local KEY = "omarchy_lcmd_window_rule"
 local REMOTE_TITLE = "微信 on cloud.lazycat.catlink.wechat-cde"
 
@@ -14,7 +14,17 @@ function M.is_launcher(window)
 end
 
 function M.is_remote_wechat(window)
-  return window ~= nil and window.class == "wechat" and window.initial_title == REMOTE_TITLE
+  if window == nil then return false end
+  local tags = window.tags or {}
+  if type(tags) == "string" then
+    local parsed = {}
+    for tag in tags:gmatch("[^,%s]+") do parsed[#parsed + 1] = tag end
+    tags = parsed
+  end
+  for _, tag in ipairs(tags) do
+    if tag == "omarchy-startup-map" or tag == "omarchy-startup-map*" then return false end
+  end
+  return window.class == "wechat" and window.initial_title == REMOTE_TITLE
 end
 
 function M.choose_workspace(window)

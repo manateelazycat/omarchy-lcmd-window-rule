@@ -12,6 +12,8 @@ An Omarchy service plugin that manages Lazycat Microserver Desktop (LCMD) and re
 
 Only remote WeChat with class `wechat` and initial title `微信 on cloud.lazycat.catlink.wechat-cde` is managed. Local WeChat is unaffected. Existing windows are not relocated when enabling the plugin.
 
+Windows tagged `omarchy-startup-map` by Startup Map keep their explicitly configured destination instead of being reassigned to an empty screen.
+
 ## Install locally
 
 Requires Omarchy's Quickshell plugin system and Hyprland 0.56+ with Lua configuration support. No additional packages or persistent worker processes are needed.

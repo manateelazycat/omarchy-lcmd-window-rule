@@ -12,6 +12,8 @@
 
 仅匹配窗口类名 `wechat`、初始标题 `微信 on cloud.lazycat.catlink.wechat-cde` 的远程微信，不影响本地微信。启用插件时不会重新排列已经打开的窗口。
 
+带有 Startup Map 设置的 `omarchy-startup-map` 标签的窗口保留其明确指定的位置，不会再次分配到空白显示器。
+
 ## 本地安装
 
 需要带 Quickshell 插件系统的 Omarchy，以及支持 Lua 配置的 Hyprland 0.56+。无需额外安装软件包或运行常驻辅助进程。
